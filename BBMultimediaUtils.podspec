@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'BBMultimediaUtils'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = 'A collection of utilities for manipulating Images and Videos.'
 
   s.description      = <<-DESC
@@ -30,7 +30,7 @@ This repo contains all the utility files and classes needed to make MRGR, MSKR a
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-    s.frameworks = 'UIKit', 'AVFoundation'
+  # s.frameworks = 'UIKit', 'AVFoundation'
     s.swift_version = '4.0'
 
 end
