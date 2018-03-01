@@ -10,10 +10,10 @@ import AVFoundation
 import MediaPlayer
 
 public protocol Video {
-    var videoUrl: URL { get set }
-    var asset: AVAsset { get set }
-    var duration: CMTime { get set }
-    var thumbnail: UIImage  { get set }
+    var videoUrl: URL? { get set }
+    var asset: AVAsset? { get set }
+    var duration: CMTime? { get set }
+    var thumbnail: UIImage?  { get set }
     var muted: Bool { get set }
 }
 
@@ -36,10 +36,13 @@ public class BBVideoUtils {
         // run through all the assets selected
         assets.reversed().forEach {(video) in
             
-            let timeRange = CMTimeRangeMake(kCMTimeZero, video.duration)
+            guard let asset = video.asset,
+                  let duration = video.duration else { return }
+            
+            let timeRange = CMTimeRangeMake(kCMTimeZero, duration)
             
             // add all video tracks in asset
-            let videoMediaTracks = video.asset.tracks(withMediaType: .video)
+            let videoMediaTracks = asset.tracks(withMediaType: .video)
             videoMediaTracks.forEach{ (videoMediaTrack) in
                 
                 //                maxWidth = max(videoMediaTrack.naturalSize.width, maxWidth)
@@ -53,7 +56,7 @@ public class BBVideoUtils {
             }
             
             // add all audio tracks in asset
-            let audioMediaTracks = video.asset.tracks(withMediaType: .audio)
+            let audioMediaTracks = asset.tracks(withMediaType: .audio)
             audioMediaTracks.forEach {(audioMediaTrack) in
                 try? audioTrack?.insertTimeRange(timeRange, of: audioMediaTrack, at: kCMTimeZero)
             }

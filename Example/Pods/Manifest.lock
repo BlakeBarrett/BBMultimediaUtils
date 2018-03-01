@@ -1,5 +1,5 @@
 PODS:
-  - BBMultimediaUtils (0.1.0)
+  - BBMultimediaUtils (0.1.2)
 
 DEPENDENCIES:
   - BBMultimediaUtils (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  BBMultimediaUtils: 1915ca4b417fe140a386236d8da5961b1de91f3e
+  BBMultimediaUtils: 7b818c6dc36f01755acb3899d0f270ed5aedc379
 
 PODFILE CHECKSUM: 37948af35afba8ef60a159cf58585274d4f0b96e
 

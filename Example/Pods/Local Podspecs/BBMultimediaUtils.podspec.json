@@ -1,8 +1,8 @@
 {
   "name": "BBMultimediaUtils",
-  "version": "0.1.0",
-  "summary": "A short description of BBMultimediaUtils.",
-  "description": "TODO: Add long description of the pod here.",
+  "version": "0.1.2",
+  "summary": "A collection of utilities for manipulating Images and Videos.",
+  "description": "This repo contains all the utility files and classes needed to make MRGR, MSKR and Stchy.",
   "homepage": "https://github.com/blakebarrett/BBMultimediaUtils",
   "license": {
     "type": "MIT",
@@ -13,10 +13,16 @@
   },
   "source": {
     "git": "https://github.com/blakebarrett/BBMultimediaUtils.git",
-    "tag": "0.1.0"
+    "tag": "0.1.2"
   },
+  "social_media_url": "https://twitter.com/schjlatah",
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "BBMultimediaUtils/Classes/**/*"
+  "source_files": "BBMultimediaUtils/Classes/**/*",
+  "frameworks": [
+    "UIKit",
+    "AVFoundation"
+  ],
+  "swift_version": "4.0"
 }
