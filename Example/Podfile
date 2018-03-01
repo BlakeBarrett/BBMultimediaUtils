@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'BBMultimediaUtils_Example' do
+  pod 'BBMultimediaUtils', :path => '../'
+
+  target 'BBMultimediaUtils_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
