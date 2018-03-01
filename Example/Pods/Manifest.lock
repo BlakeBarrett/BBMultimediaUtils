@@ -1,0 +1,16 @@
+PODS:
+  - BBMultimediaUtils (0.1.0)
+
+DEPENDENCIES:
+  - BBMultimediaUtils (from `../`)
+
+EXTERNAL SOURCES:
+  BBMultimediaUtils:
+    :path: ../
+
+SPEC CHECKSUMS:
+  BBMultimediaUtils: 1915ca4b417fe140a386236d8da5961b1de91f3e
+
+PODFILE CHECKSUM: 37948af35afba8ef60a159cf58585274d4f0b96e
+
+COCOAPODS: 1.4.0
